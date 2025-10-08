@@ -68,7 +68,7 @@ export default function HomeScreen({ navigation, route }) {
       refreshControl={<RefreshControl refreshing={refreshing} onRefresh={handleRefresh} />}
       onEndReached={handleLoadMore}
       onEndReachedThreshold={0.3}
-      ListEmptyComponent={<Text style={{ textAlign: "center", marginTop: 50 }}>No hay Pokémon 🐣</Text>}
+      ListEmptyComponent={<Text style={{ textAlign: "center", marginTop: 50 }}>No hay Pokémon </Text>}
       ListFooterComponent={loading ? <ActivityIndicator style={{ margin: 20 }} /> : null}
     />
   );
